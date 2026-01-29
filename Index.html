@@ -1,22 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>App Home</title>
-		<link rel="stylesheet" href="Style.css" />
-	</head>
-	<body>
-		<main class="container">
-			<h1 class="title">Welcome to the App</h1>
-			<p class="lead">Click the button below to visit the GitHub repository.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Replicade</title>
 
-			<button id="githubBtn" class="btn">Open GitHub</button>
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
-			<footer class="footer">Replace the link in <code>App.js</code> with your repository URL.</footer>
-		</main>
+  <!-- CSS -->
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
 
-		<script src="App.js"></script>
-	</body>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Replicade</h1>
+    <p>Build · Learn · Replicate</p>
+
+    <div class="buttons">
+      <button class="btn btn-github" onclick="openGitHub()">
+        <i class="fa-brands fa-github"></i>
+        View on GitHub
+      </button>
+
+      <button class="btn btn-learn" onclick="scrollToFeatures()">
+        <i class="fa-solid fa-book"></i>
+        Learn More
+      </button>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="card">
+      <h3>Learn by Doing</h3>
+      <p>Improve your coding skills through hands-on practice and small projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Project Examples</h3>
+      <p>Study real-world project samples and understand how they work.</p>
+    </div>
+
+    <div class="card">
+      <h3>Easy to Replicate</h3>
+      <p>Simple steps and clear structure make replication easy.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Replicade | Home • Features • Contact
+  </footer>
+
+  <!-- JS -->
+  <script src="App.js"></script>
+</body>
 </html>
 
