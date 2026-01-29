@@ -1,5 +1,7 @@
+const GITHUB_URL = 'https://github.com/mannuruafrid-dotcom/Hack-Pack';
+
 function openGitHub() {
-  window.open("https://github.com/your-username/your-repo", "_blank");
+  window.open(GITHUB_URL, '_blank', 'noopener,noreferrer');
 }
 
 function scrollToFeatures() {
